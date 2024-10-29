@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">  
-  <head>  
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      /* 默认样式，适用于电脑（大屏幕） */  
+      body {  
+        margin: 100px; /* 为电脑设置较大的页边距 */  
+      }  
+  
+      /* 媒体查询，适用于手机（小屏幕） */  
+      @media screen and (max-width: 768px) {  
+        body {  
+          margin: 20px; /* 为手机设置较小的页边距 */  
+        }  
+      }  
         div.content { 
-            margin: 100px;
+            margin: 0px; /*100px*/
             border: 1px solid white;
             line-height: 2.0;    
         }      
